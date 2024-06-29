@@ -8,6 +8,7 @@ import {
   Image,
   ImageBackground,
   Pressable,
+  Text,
   ToastAndroid,
   View,
 } from "react-native";
@@ -33,30 +34,20 @@ export default function Home() {
       source={require("@/assets/imagens/background.png")}
       className="flex-1  items-center justify-center p-8"
     >
-      {/* <Image
+      <Image
         source={require("@/assets/imagens/logo.png")}
         resizeMode="contain"
-        className="h-28"
-      /> */}
-      <View className="w-full mt-12 gap-4">
-        <Input>
-          <MaterialCommunityIcons
-            name="ticket-confirmation-outline"
-            color="white"
-            size={24}
-          />
-          <Input.Field
-            placeholder="Código do evento"
-            value={code}
-            onChangeText={(t) => setCode(t)}
-          />
-          {code.length > 0 && (
-            <Pressable onPress={() => setCode("")}>
-              <MaterialCommunityIcons name="close" size={24} color="#666" />
-            </Pressable>
-          )}
-        </Input>
-
+        className="h-72"
+      />
+      <View className="w-full mt-4">
+        <Text
+          className="text-5xl text-gray-500 font-bold"
+          style={{ textAlign: "center" }}
+        >
+          Retome o controle da sua vida financeira
+        </Text>
+      </View>
+      <View className="absolute bottom-8">
         <Button title="Acessar evento" onPress={handleValidateCode} />
       </View>
     </ImageBackground>
