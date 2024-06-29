@@ -1,18 +1,15 @@
 import "../styles/global.css";
 
-import React, { useEffect } from "react";
-import { StatusBar } from "expo-status-bar";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
-import { ClerkProvider, ClerkLoaded, useAuth } from "@clerk/clerk-expo";
 
-//FONT
-import { useFonts } from "expo-font";
-import * as SplashScreen from "expo-splash-screen";
-
-import { Slot, router } from "expo-router";
-
-import { Loading } from "@/components/loading";
+import { Loading } from "@/components/Loading";
 import { tokenChache } from "@/storage/tokenCache";
+import { ClerkLoaded, ClerkProvider, useAuth } from "@clerk/clerk-expo";
+import { useFonts } from "expo-font";
+import { Slot, router } from "expo-router";
+import * as SplashScreen from "expo-splash-screen";
+import { StatusBar } from "expo-status-bar";
+import React, { useEffect } from "react";
 
 SplashScreen.preventAutoHideAsync();
 

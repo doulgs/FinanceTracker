@@ -1,9 +1,9 @@
-import { Button } from "@/components/button";
 import { useOAuth } from "@clerk/clerk-expo";
 import * as WebBrowser from "expo-web-browser";
 import * as Linking from "expo-linking";
 import { useEffect, useState } from "react";
 import { Dimensions, Image, ImageBackground, Text, View } from "react-native";
+import { Button } from "@/components/Button";
 
 const DIM_HEIGHT = Dimensions.get("screen").height;
 const DIM_WIDTH = Dimensions.get("screen").width;
@@ -49,7 +49,7 @@ export default function SignIn() {
       <Image
         source={require("@/assets/imagens/logo.png")}
         resizeMode="contain"
-        className="h-72"
+        className="h-80"
       />
       <View className="w-full mt-4">
         <Text

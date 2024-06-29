@@ -15,7 +15,7 @@ export function Button({ title, isloading = false, ...rest }: Touchable) {
     <TouchableOpacity
       disabled={isloading}
       activeOpacity={0.7}
-      className="w-full h-14 item-center justify-center rounded-lg bg-gray-800"
+      className="w-full h-14 item-center justify-center rounded-lg bg-gray-700"
       {...rest}
     >
       {isloading ? (
