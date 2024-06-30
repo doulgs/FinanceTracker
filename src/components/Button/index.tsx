@@ -15,13 +15,13 @@ export function Button({ title, isloading = false, ...rest }: Touchable) {
     <TouchableOpacity
       disabled={isloading}
       activeOpacity={0.7}
-      className="w-full h-14 item-center justify-center rounded-lg bg-blue-200"
+      className="w-full h-14 item-center justify-center rounded-lg bg-gray-700"
       {...rest}
     >
       {isloading ? (
         <ActivityIndicator className="text-white" />
       ) : (
-        <Text className="text-blue-300 text-center font-bold uppercase text-xl">
+        <Text className="text-blue-500 text-center font-bold uppercase text-xl">
           {title}
         </Text>
       )}
