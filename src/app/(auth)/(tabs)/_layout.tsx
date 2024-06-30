@@ -1,13 +1,13 @@
 import { colors } from "@/styles";
 import {
   AntDesign,
-  Feather,
   Foundation,
+  Ionicons,
   MaterialIcons,
 } from "@expo/vector-icons";
+import BottomSheet from "@gorhom/bottom-sheet";
 import { Tabs } from "expo-router";
 import { View } from "react-native";
-import BottomSheet from "@gorhom/bottom-sheet";
 
 import { Avatar } from "@/components/Avatar";
 import { Menu } from "@/components/Menu";
@@ -56,7 +56,7 @@ export default function TabLayout() {
           name="deshboard"
           options={{
             tabBarIcon: ({ focused, color, size }) => (
-              <Feather name="pie-chart" size={size} color={color} />
+              <Ionicons name="pie-chart-outline" size={size} color={color} />
             ),
           }}
         />
